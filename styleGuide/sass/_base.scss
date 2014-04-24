@@ -1,16 +1,37 @@
+/*! Wise to use-hyphen in CSS and not camelCase. See 'Class Names' in this doc for more info: http://mdo.github.io/code-guide/#css-syntax */
+
 body {
   background: $white;
   font-size: 1rem;
 }
 
-.rapture {
-  font-family: $font-katie, $font-rapture, helvetica;
-  font-size: 9rem;
-  letter-spacing: 8px;
-  text-shadow: 12px 2px 0px #f00;
-}
-
 code {
   font-family: Courier, monospace;
   font-size: 12px;
+}
+
+#type {
+  background: #FFFFF4;
+}
+
+section {
+  padding-bottom: 1em;
+}
+
+h2 {
+  font-family: $font-blog-heading;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: .4em 0;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: .5em 0;
+  font-family: $font-links-nav;
 }

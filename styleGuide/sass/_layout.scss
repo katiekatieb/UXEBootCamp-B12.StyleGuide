@@ -21,7 +21,7 @@ h1 {
   text-align: left;
   color: $grey;
   padding: 0 0 0 .3em;
-  text-transform:uppercase;
+  text-transform: uppercase;
   display: inline-block;
   vertical-align: top;
 }
@@ -33,15 +33,15 @@ nav {
   line-height: 2em;
   text-align: right;
   vertical-align: top;
-  a{
-        font-family: helvetica;
-        color: $grey;
-        font-size: 0.8em;
-        text-transform:uppercase;
-        text-decoration: none;
-      }
-      a:hover{
-        color: $navHover;
+  a {
+    font-family: helvetica;
+    color: $grey;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $navHover;
   }
 }
 
@@ -57,9 +57,5 @@ footer {
   color: $white;
   font-family: helvetica;
   text-align: center;
-  text-transform:uppercase;
-}
-
-swatch{
-
+  text-transform: uppercase;
 }
