@@ -21,17 +21,17 @@ h1 {
   text-align: left;
   color: $grey;
   padding: 0 0 0 .3em;
-  text-transform:uppercase;
+  text-transform: uppercase;
   display: inline-block;
   vertical-align: top;
 }
 
-h2{
+h2 {
   font: 1.5em oswald;
   text-align: left;
   margin: 2em 2em 0em 2em;
   color: $grey;
-  text-transform:uppercase;
+  text-transform: uppercase;
   display: block;
   vertical-align: top;
 }
@@ -43,15 +43,15 @@ nav {
   line-height: 2em;
   text-align: right;
   vertical-align: top;
-  a{
-        font-family: oswald;
-        color: $grey;
-        font-size: 0.8em;
-        text-transform:uppercase;
-        text-decoration: none;
-      }
-      a:hover{
-        color: $nav-hover;
+  a {
+    font-family: oswald;
+    color: $grey;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $nav-hover;
   }
 }
 
@@ -67,5 +67,5 @@ footer {
   color: $white;
   font-family: oswald;
   text-align: center;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
