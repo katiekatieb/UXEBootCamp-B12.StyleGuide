@@ -10,28 +10,65 @@ code {
   font-size: 12px;
 }
 
-#type {
-  background: #FFFFF4;
+.swatch ul{
+  text-align: center;
+  // width: 90%;
+  // margin: 0 auto;
 }
 
-section {
-  padding-bottom: 1em;
+@for $i from 1 through length($swatchColors) {
+  .swatch li:nth-child(#{$i}) {
+    width: 13em;
+    font-family: Courier;
+    padding: 1.5em;
+    border-radius:0px;
+    height: 6em;
+    line-height: 120%;
+    // box-shadow:
+    margin: 2em;
+    border: 1px #ccc solid;
+    display: inline-block;
+    background-color: nth($swatchColors, $i);
+    @if nth($swatchColors, $i) == $white or nth($swatchColors, $i) == $cream{
+      color: $grey;
+    }
+    @else{
+      color: $white;
+    }
+  }
 }
 
-h2 {
-  font-family: $font-blog-heading;
-  font-weight: 400;
-  font-size: 2rem;
-  padding: .4em 0;
+.usage {
+  ul{
+    text-align: center;
+  }
+  display: inline-block;
+  font-family: courier;
+  li{
+    width: 30em;
+    margin: 2em;
+    outline: 1px solid;
+    padding: 2em;
+    vertical-align: middle;
+  }
 }
 
-ul,
-li {
-  padding: 0;
-  margin: 0;
+@each $color in $swatchNames{
+  .#{$color} {
+    font-family: helvetica;
+    background-color: unquote("$"+(#{$color}));
+  }
 }
 
-li {
-  margin: .5em 0;
-  font-family: $font-links-nav;
+section{
+  width: 90%;
+  background-color: $white;
 }
+
+// @each $colorName in $swatchNames{
+//   .#{$colorName} {
+//     @each $color in $colorSwatches{
+//       background-color: #{$color};
+//     }
+//   }
+// }

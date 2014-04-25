@@ -1,8 +1,8 @@
 // Base Color Pallete
-$darkblue     :    #0A466D;
-$lightblue    :    #0E819B;
-$darkred      :    #591710;
-$lightred     :    #b02220;
+$dark-blue    :    #0A466D;
+$light-blue   :    #0E819B;
+$dark-red     :    #591710;
+$light-red    :    #b02220;
 $cream        :    #f8ebc9;
 $white        :    #ffffff;
 $brown        :    #3c3231;
@@ -26,3 +26,10 @@ $font-primary: Helvetica, Arial, sans-serif;
 $font-secondary: sans-serif;
 $font-links-nav: 'Domine';
 $font-blog-heading: 'Open Sans';
+
+
+//lists
+$swatchColors: $dark-blue, $light-blue, $dark-red, $light-red, $cream, $white, $brown, $charcoal ;
+
+$swatchNames: dark-blue, light-blue, dark-red, light-red, cream, white, brown, charcoal ;
+
