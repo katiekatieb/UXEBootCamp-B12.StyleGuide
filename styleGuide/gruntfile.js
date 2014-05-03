@@ -1,4 +1,8 @@
 module.exports = function(grunt) {
+  // Add Grunt Timer
+  // $ npm install time-grunt
+  // https://www.npmjs.org/package/time-grunt
+  require('time-grunt')(grunt);
   grunt.initConfig({
     sass: {
       dist: {
@@ -24,8 +28,7 @@ module.exports = function(grunt) {
       }
     }
   });
-
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
-  grunt.registerTask('default', 'watch');
+  grunt.registerTask('default', ['sass']);
 };
